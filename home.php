@@ -170,7 +170,7 @@
     <div class="news">
         <div class="row">
             <div class="col-sm-12">
-                <h2 style="text-align:center">TIN MỚI NHẤT</h2>
+                <h1 class="text-center mt-3">TIN MỚI NHẤT</h1>
             </div>
             
             <?php 
@@ -189,9 +189,9 @@
                          
                             
                             echo '<div class="col m-3" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
-                            <img src="<?php echo $row[img] ?>"  alt="...">
-			                    <h3>' . $row['tieude'] . '</h3>
-			                    <p class="mt-4">' . $row['noidung'] . '</p>
+                            <img class="ms-2" src="<?php echo $row[img] ?>"  alt="...">
+			                    <h5 class="ms-2">' . $row['tieude'] . '</h5>
+			                    <p class="mt-4 ms-2">' . $row['noidung'] . '</p>
                             </div>';
                              }
                         
@@ -210,17 +210,33 @@
     <!--News end-->
     <!-- Event start -->
     <div class="events">
-        <div class="imagebg bg-fill">
+        <div class="imagebg bg-fill bg-light" >
             <div class="bg-overlay fill">
                 <div class="row">
-                    <div class="col-sm-12">
-                        <h2 style="text-align:center">Sự kiện mới nhất</h2>
-                    </div>
-
-                    <div class="carousel" data-flickity='{"pageDots": false, "groupCells": 4 , "wrapAround": true, "prevNextButtons": false}'>
-                        
-
-                    </div>
+                    <div class="col-12">
+                        <h1 style="opacity: 0,1;" class="text-center mt-3">Sự kiện mới nhất</h1>
+                    </div>             
+            <?php 
+            
+            //Ket noi CSDL
+            $link = mysqli_connect("localhost", "root", "") or die("Could not connect: " . mysqli_error());
+            //Chon CSDL de lam viec
+            $db_selected = mysqli_select_db($link, "bku");
+            $sql = "select * from event";
+            $rs = mysqli_query($link, $sql);
+            //===================================================
+            while ($row = mysqli_fetch_array($rs)) {
+                echo '<div class="col m-3" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
+                <img class="ms-2" src="<?php echo $row[img] ?>"  alt="...">
+                    <h5 class="ms-2">' . $row['tieude'] . '</h5>
+                    <p class="mt-4 ms-2"> thoi gian: '  . $row['date'] . '</p>
+                    <p class="mt-4 ms-2"> dia diem: ' . $row['diadiem'] . '</p>
+                </div>';
+                 }
+            mysqli_free_result($rs);
+            mysqli_close($link);
+            ?>
+        </div>
                 </div>
             </div>
         </div>
@@ -390,6 +406,7 @@
         </div>
     </div>
     <!-- Video end-->
+    
     <!-- footer  -->
     <div class="footer   bg-secondary ">
         <div class="bg-loader ">
@@ -486,7 +503,7 @@
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh51eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
 </body>

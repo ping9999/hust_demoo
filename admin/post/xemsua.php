@@ -29,11 +29,11 @@ $row = mysqli_fetch_array($rs);
 			</tr>	
 			<tr>
 				<td>tieu de</td>
-				<td><input type="text" size = "20" name="txttieude" value="<?php echo $row['tieude'];?>"></td>
+				<td><input type="text" size = "170" name="txttieude" value="<?php echo $row['tieude'];?>"></td>
 			</tr>
 			<tr>
 				<td>noi dung </td>
-				<td><input type="text" size = "20" name="txtnoidung"  value="<?php echo $row['noidung'];?>">
+				<td><input type="text" size = "170" name="txtnoidung"  value="<?php echo $row['noidung'];?>">
 				</td>
 			</tr>
 			<tr>

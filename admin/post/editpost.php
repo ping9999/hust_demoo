@@ -23,26 +23,26 @@ echo '<Form action = "handleedit.php">';
 echo '<table border = "1" width = "100%">';
 echo '<h3 class="text-center"> Thông tin bai viet </h3 class="text-center">'; 
 ECHO '<a class="nav-link bg-danger col-2 text-light" href="addpost.php">them bai viet</a>'; 
-echo '<tr class="table">
-        <th>id</th>
-        <th>tieu de</th>
-        <th>noi dung</th>
-        <th>hinh anh</th>
-        <th>thao tac</th>
+echo '<tr class=" border-bottom text-center">
+        <th class=" border-end">id</th>
+        <th class=" border-end">tieu de</th>
+        <th class=" border-end">noi dung</th>
+        <th class=" border-end">hinh anh</th>
+        <th class=" border-end">thao tac</th>
       </tr>';
 while ($row = mysqli_fetch_array($rs))
 {
-	echo '<tr>
-			<td scope="col">'.$row['id'].'</td>
-			<td scope="col">'.$row['tieude'].'</td>
-			<td scope="col">'.$row['noidung'].'</td>
-      <td scope="col">'.$row['img'].'  </td>
-			<td scope="col" align = "center"><a href = "xemsua.php?id='.$row['id'].'">Cập nhật</a>
-      <a href = "handledetele.php?id='.$row['id'].'">xoa</a></td>
+	echo '<tr class="text-center">
+			<td  class=" border" scope="col">'.$row['id'].'</td>
+			<td class=" border" scope="col">'.$row['tieude'].'</td>
+			<td class=" border" scope="col">'.$row['noidung'].'</td>
+      <td class=" border" scope="col">'.$row['img'].'  </td>
+			<td class=" border" scope="col"  align = "center"><a class="nav-link" href = "xemsua.php?id='.$row['id'].'">Cập nhật</a>
+      <a class="nav-link" href = "handledetele.php?id='.$row['id'].'">xoa</a></td>
       </tr>';
 }
 echo '</TABLE>';
-echo '<br><a href="admin.html" ><Input type = "button" value = "Back"></a>';
+
 mysqli_free_result($rs);
 mysqli_close($link);
 ?>
