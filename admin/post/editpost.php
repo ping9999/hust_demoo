@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title> controller post</title>
   </head>
 <?php
 session_start();
@@ -22,7 +22,7 @@ $rs = mysqli_query($link,$sql);
 echo '<Form action = "handleedit.php">';
 echo '<table border = "1" width = "100%">';
 echo '<h3 class="text-center"> Thông tin bai viet </h3 class="text-center">'; 
-ECHO '<a class="nav-link bg-danger col-2 text-light" href="addpost.php">them bai viet</a>'; 
+ECHO '<a class="nav-link bg-danger col-2 text-light m-1" href="addpost.php">them bai viet</a>'; 
 echo '<tr class=" border-bottom text-center">
         <th class=" border-end">id</th>
         <th class=" border-end">tieu de</th>

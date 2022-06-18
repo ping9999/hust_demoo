@@ -48,21 +48,26 @@
                         </div>
                     </div>
                     <div class="dropdown">
-                        <button class="dropbtn">Bộ môn-Trung tâm </button>
+                        <button class="dropbtn">Khoa - Trung tâm </button>
                         <div class="dropdown-content">
-                            <div class="row g-0">
-                                <div class="col-5 m-1">
-                                    <a href="#" class="bg-danger">Link 1</a>
-                                    <a href="#">Link 2</a>
-                                    <a href="#">Link 3</a>
+                            <div class="row g-0" style="width: 600px">
+                                <div class="col-4 m-1 me-0">
+                                    <a href="#" class="bg-danger">Khoa</a>
+                                    <a href="#">khoa học máy tính</a>
+                                    <a href="#">Kĩ thuật máy tính</a>
                                 </div>
-                                <div class="col text-light">
-                                    <hr width="1" size="100">
+                                <div class="col-1 text-light text-center ms-5">
+                                    <hr width="1" size="390">
                                 </div>
-                                <div class="col-6  m-1">
-                                    <a href="#" class="bg-danger">Link 1</a>
-                                    <a href="#">Link 2</a>
-                                    <a href="#">Link 3</a>
+                                <div class="col  m-1 ms-0">
+                                    <a href="#" class="bg-danger">Trung tâm</a>
+                                    <a href="#">Trung tâm máy tính và thực hành</a>
+                                    <a href="#">Trung tâm đổi mới sáng tạo</a>
+                                    <a href="#">Trung tâm đổi nguyên cứu quốc tế và trí tuệ nhân tạo</a>
+                                    <a href="#">Trung tâm an toàn và bảo mật thông tin</a>
+                                    <a href="#">Trung tâm công nghệ và giải pháp chuyển đổi số trong giáo dục</a>
+                                    <a href="#">Trung tâm nghiên cứu quốc tế về định vị và sử dụng vệ tinh</a>
+                                 
                                 </div>
                             </div>
                         </div>
@@ -70,67 +75,76 @@
                     <div class="dropdown">
                         <button class="dropbtn">Đào tạo</button>
                         <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <a href="#">Giới thiệu chung</a>
+                            <a href="#">hệ đại học</a>
+                            <a href="#">hệ đại học</a>
+                            <a href="#">hệ thạc sĩ</a>
+                            <a href="#">hệ tiến sĩ</a>
+                            <a href="#">đào tạo chứng chỉ</a>
                         </div>
                     </div>
                     <div class="dropdown">
                         <button class="dropbtn">Nghiên cứu</button>
                         <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <a href="#">giới thiệu chung</a>
+                            <a href="#">Các phòng thí nghiệm</a>
+                            <a href="#">Đề tài - dự án</a>
+                            <a href="#">nghiên cứu khoa học</a>
+                            <a href="#">tìm chuyên gia</a>
                         </div>
                     </div>
                     <div class="dropdown">
                         <button class="dropbtn">Tuyển sinh</button>
                         <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <a href="#">kiến tạo tương lai với soict</a>
+                            <a href="#">tuyển sinh 2022</a>
+                            <a href="#">điểm chuẩn tham khảo</a>
+                            <a href="#">tuyển sinh đào tạo ngắn hạn</a>
+                            <a href="#">hỏi đáp về tuyển sinh</a>
                         </div>
                     </div>
                     <div class="dropdown">
                         <button class="dropbtn">Sinh viên</button>
                         <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <a href="#">biểu mẫu và quy định dành cho sinh viên</a>
+                            <a href="#">cố vấn học tập</a>
+                            <a href="#">hoạt động sinh viên và nghiên cứu khoa học</a>
+                            <a href="#">Thực tập doanh nghiệp</a>
                         </div>
                     </div>
                     <div class="dropdown">
                         <button class="dropbtn">Hợp tác Đối ngoại</button>
                         <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <a href="#">giới thiệu chung</a>
+                            <a href="#">hợp tác với khối hàn lâm</a>
+                            <a href="#">hợp tác với khối doanh nghiệp</a>
                         </div>
                     </div>
                     <div class="dropdown">
                         <button class="dropbtn">Cựu Sinh viên</button>
                         <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <a href="#">giới thiệu chung</a>
+                            <a href="#">tấm gương cựu sinh viên</a>
+                          
                         </div>
                     </div>
                     <div class="dropdown">
                         <button class="dropbtn">Tin tức-Sự kiện</button>
-                        <div class="dropdown-content">
-                            <div class="row g-0">
+                        <div class="dropdown-content ">
+                            <div class="row g-0" style="width: 290px">
                                 <div class="col-5 m-1">
-                                    <a href="#" class="bg-danger">Link 1</a>
-                                    <a href="#">Link 2</a>
-                                    <a href="#">Link 3</a>
+                                    <a href="#" class="bg-danger">tin tức</a>
+                                    <a href="#">thông báo</a>
+                                    <a href="#">tin bài</a>
+                                    <a href="#">soict talks</a>
                                 </div>
                                 <div class="col text-light">
-                                    <hr width="1" size="100">
+                                    <hr width="1" size="180">
                                 </div>
                                 <div class="col-6  m-1">
-                                    <a href="#" class="bg-danger">Link 1</a>
-                                    <a href="#">Link 2</a>
-                                    <a href="#">Link 3</a>
+                                    <a href="#" class="bg-danger">sự kiện</a>
+                                    <a href="#">sự kiện sắp diễn ra</a>
+                                    <a href="#">sự kiện đã diễn ra</a>
                                 </div>
                             </div>
                         </div>
@@ -138,9 +152,9 @@
                     <div class="dropdown">
                         <button class="dropbtn">Tuyển dụng</button>
                         <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <a href="#">tuyển dụng cho soict</a>
+                            <a href="#">tuyển sụng cho sinh viên</a>
+                           
                         </div>
                     </div>
                 </div>
@@ -189,10 +203,10 @@
                          
                             
                             echo '<div class="col m-3" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
-                            <img class="ms-2" src="<?php echo $row[img] ?>"  alt="...">
+                            <a href="" class="nav-link text-dark" >    <img class="ms-2" src="<?php echo $row[img] ?>"  alt="...">
 			                    <h5 class="ms-2">' . $row['tieude'] . '</h5>
 			                    <p class="mt-4 ms-2">' . $row['noidung'] . '</p>
-                            </div>';
+                        </a>    </div>';
                              }
                         
 
@@ -210,14 +224,14 @@
     <!--News end-->
     <!-- Event start -->
     <div class="events">
-        <div class="imagebg bg-fill bg-light" >
-            <div class="bg-overlay fill">
-                <div class="row">
+        <div class="imagebg "  style=" background:url(images/bgevent.png)no-repeat; background-size:cover;">
+            <div class=" fill">
+                <div class="row ">
                     <div class="col-12">
-                        <h1 style="opacity: 0,1;" class="text-center mt-3">Sự kiện mới nhất</h1>
+                        <h1 style="opacity: 0,1;" class="text-center mt-3 text-light">Sự kiện mới nhất</h1>
                     </div>             
             <?php 
-            
+          
             //Ket noi CSDL
             $link = mysqli_connect("localhost", "root", "") or die("Could not connect: " . mysqli_error());
             //Chon CSDL de lam viec
@@ -226,12 +240,12 @@
             $rs = mysqli_query($link, $sql);
             //===================================================
             while ($row = mysqli_fetch_array($rs)) {
-                echo '<div class="col m-3" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
-                <img class="ms-2" src="<?php echo $row[img] ?>"  alt="...">
+                echo '<div class="col m-3 bg-light" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
+                <a href="" class="nav-link text-dark" >  <img class="ms-2" src="<?php echo $row[img] ?>"  alt="...">
                     <h5 class="ms-2">' . $row['tieude'] . '</h5>
                     <p class="mt-4 ms-2"> thoi gian: '  . $row['date'] . '</p>
-                    <p class="mt-4 ms-2"> dia diem: ' . $row['diadiem'] . '</p>
-                </div>';
+                    <p class="mt-0 ms-2"> dia diem: ' . $row['diadiem'] . '</p>
+              </a>  </div> ';
                  }
             mysqli_free_result($rs);
             mysqli_close($link);
@@ -254,7 +268,7 @@
     <div class="testimonial">
         <div class="row">
             <div class="col-sm-12">
-                <h2 style="text-align:center">NÓI VỀ SoICT</h2>
+                <h2 style="text-align:center">NÓI VỀ SOICT</h2>
             </div>
             <div class="carousel" data-flickity='{ "fade": true, "imagesLoaded": true }'>
                 <div class="col-9">
@@ -414,7 +428,7 @@
                 <div class="row bg-secondary " >
                     <div class="container-fluid bottom_border">
                         <div class="row ">
-                            <div class=" col-sm-4 col-md col-sm-4 col-12 col">
+                            <div class=" col-sm-4 col-md col-sm-4 col-12 col ms-3">
                                 <span class="text-light border-bottom ">BỘ MÔN - TRUNG TÂM</span>
                                
                                 <ul style="list-style-type: none;" >
@@ -479,10 +493,10 @@
                         </div>
                     </div>
 
-
+                    <a href="#" class="top"> <i class='fa fa-chevron-circle-up' style='font-size:26px;'></i></a>
                     <div class="container border-top">
 
-                        <p class="text-start text-light ">
+                        <p class="text-start text-light ms-3">
                             Copyright @ |
                             Viện Công nghệ Thông tin và Truyền thông
                         </p>
@@ -495,7 +509,13 @@
         </div>
     </div>
 
+  <script>
+      //scrollTop
+  function scrollToTop() {
+    $(window).scrollTop(0);
+}
 
+  </script>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

@@ -11,7 +11,7 @@ $row = mysqli_fetch_array($rs);
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Form cap nhat thong tin phong ban</title>
+	<title>sửa bài viết</title>
 </head>
 <body>
 	<form action = "handleedit.php?id=<?php echo $row['id'];?>" method = "post">

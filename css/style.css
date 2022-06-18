@@ -1,6 +1,3 @@
-.bg-light {
-    background-color: white;
-}
 
 .header-wrapper .navbar {
     margin: 0 auto;
@@ -53,10 +50,10 @@
 
 .header-wrapper .header-bottom {
     display: flex;
+    position: sticky;
+    top: 0;
     font-family: "Roboto", sans-serif;
     background-color: #363636;
-    padding-left: 6%;
-    margin: 0 auto;
     border-top: 0.4375rem solid #BE0F0F;
 }
 
@@ -170,148 +167,6 @@
                     text-overflow: ellipsis;
                 }
 
-.foot-part {
-    background-color: #BE0F0F;
-    width: 100%;
-    margin: 0 auto;
-    padding: .5rem 2rem .5rem 2rem;
-    text-align: center;
-}
-
-    .foot-part a {
-        text-decoration: none;
-    }
-
-        .foot-part a span {
-            color: white;
-            transition: opacity .3s, transform .3s;
-        }
-
-            .foot-part a span:hover {
-                transform: translateX(5rem);
-            }
-
-        .foot-part a:not(:hover) img {
-            display: none;
-        }
-
-.training {
-    font-family: "Roboto", sans-serif;
-}
-
-    .training .row {
-        text-align: center;
-        max-width: 1260px;
-        margin: auto;
-        width: 100%;
-    }
-
-        .training .row h2.title {
-            color: #0a0909;
-            font-size: 1.6em;
-            width: 100%;
-            margin-top: 2rem;
-            margin-bottom: .5rem;
-            letter-spacing: .05em;
-        }
-
-        .training .row .training-body {
-            display: flex;
-            margin: 2rem;
-        }
-
-            .training .row .training-body .row2 {
-                max-width: 1230px;
-            }
-
-            .training .row .training-body .card {
-                display: flex;
-                flex-direction: row;
-            }
-
-                .training .row .training-body .card .card-body {
-                    text-align: left;
-                    max-height: 100%;
-                    overflow: hidden;
-                }
-
-                .training .row .training-body .card img {
-                    right: 0;
-                    width: 100%;
-                    height: 100%;
-                    bottom: 0;
-                    left: 0;
-                    top: 0;
-                    position: absolute;
-                    object-position: 50% 50%;
-                    object-fit: cover;
-                }
-
-                .training .row .training-body .card .card-body h5 {
-                    width: 100%;
-                    margin-top: 0;
-                    margin-bottom: .5em;
-                    color: #0a0909;
-                }
-
-                .training .row .training-body .card .card-body p {
-                    font-size: 14px;
-                }
-
-                .training .row .training-body .card img {
-                    height: 100%;
-                    max-width: 18.75rem;
-                }
-
-.alumni {
-    font-family: "Roboto", sans-serif;
-}
-
-    .alumni .row {
-        max-width: 1260px;
-        margin: auto;
-        width: 100%;
-        padding-bottom: 2rem;
-    }
-
-        .alumni .row h2 {
-            font-size: 1.6em;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-            letter-spacing: .05em;
-        }
-
-        .alumni .row .card {
-            border: none;
-        }
-
-            .alumni .row .card img {
-                height: 8.90625rem;
-                object-fit: cover;
-                border-bottom: 0.25rem solid #be0f0f;
-            }
-
-            .alumni .row .card .card-body {
-                padding: 0.55125rem 0 1.1025rem 0;
-            }
-
-
-                .alumni .row .card .card-body p.card-text {
-                    font-size: 14px;
-                    height: 4.125rem;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-
-        .alumni .row .card {
-            background-color: #F4F4F4;
-            border: .5px solid #DFDFDF;
-        }
-
-            .alumni .row .card .card-body {
-                padding-left: 1rem;
-            }
-
 .about-us {
     font-family: "Roboto", sans-serif;
     background-color: #FCF9E2;
@@ -351,9 +206,12 @@
 
 .events {
     font-family: "Roboto", sans-serif;
-    background-color: #2f2424;
+    
 }
-
+    .event .imagebg {
+        background: url(images/bgevent.png)no-repeat;
+        background-size: cover   
+    }
     .events .row {
         max-width: 1260px;
         margin: auto;
@@ -420,89 +278,6 @@
                     text-overflow: ellipsis;
                 }
 
-
-.colab {
-    font-family: "Roboto", sans-serif;
-}
-
-    .colab .bg-loader {
-        background-image: url("../Images/bachkhoabg.jpg");
-    }
-
-        .colab .bg-loader .overlay {
-            background-color: rgba(0, 0, 0, 0.58);
-        }
-
-    .colab .row {
-        text-align: center;
-        max-width: 1260px;
-        margin: auto;
-        width: 100%;
-    }
-
-        .colab .row h2.title {
-            color: #f1f1f1;
-            font-size: 1.6em;
-            width: 100%;
-            margin-top: 2rem;
-            margin-bottom: .5rem;
-            letter-spacing: .05em;
-        }
-
-        .colab .row p.text {
-            color: #f1f1f1;
-            font-size: 14px;
-        }
-
-        .colab .row .colab-body {
-            display: flex;
-            margin: 2rem;
-        }
-
-            .colab .row .colab-body .row2 {
-                max-width: 1230px;
-                display: flex;
-                flex-flow: row wrap;
-            }
-
-                .colab .row .colab-body .row2 .card {
-                    display: flex;
-                    flex-flow: row wrap;
-                }
-
-                    .colab .row .colab-body .row2 .card .card-body {
-                        text-align: left;
-                        max-height: 100%;
-                        overflow: hidden;
-                    }
-
-            .colab .row .colab-body .card img {
-                right: 0;
-                width: 100%;
-                height: 100%;
-                bottom: 0;
-                left: 0;
-                top: 0;
-                position: absolute;
-                object-position: 50% 50%;
-                object-fit: cover;
-            }
-
-            .colab .row .colab-body .row2 .card .card-body h5 {
-                width: 100%;
-                margin-top: 0;
-                margin-bottom: .5em;
-                color: #0a0909;
-            }
-
-            .colab .row .colab-body .row2 .card .card-body p {
-                font-size: 14px;
-            }
-
-            .colab .row .colab-body .card img {
-                height: 100%;
-                max-width: 18.75rem;
-            }
 
 .video {
     font-family: "Roboto", sans-serif;
@@ -592,78 +367,25 @@
                     font-weight: bolder;
                 }
 
-
-
-                .alumni {
-                    font-family: "Roboto", sans-serif;
-                }
-
-    .alumni .row {
-        max-width: 1260px;
-        margin: auto;
-        width: 100%;
-        padding-bottom: 2rem;
-    }
-
-        .alumni .row h2 {
-            font-size: 1.6em;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-            letter-spacing: .05em;
-        }
-
-        .alumni .row .card {
-            border: none;
-        }
-
-            .alumni .row .card img {
-                height: 8.90625rem;
-                object-fit: cover;
-            }
-
-            .alumni .row .card .card-body {
-                padding: 15px;
-            }
-
-                .alumni .row .card .card-body p.notify {
-                    color: #f1f1f1;
-                    background-color: #2f2424;
-                    height: 70px;
-                    width: 70px;
-                    text-align: center;
-                    box-shadow: 0 0 10px rgba(0, 0, 0, .15), 0 3px 3px rgba(0, 0, 0, .15);
-                    margin-top: -60px;
-                    position: relative;
-                    margin-left: 25px;
-                    font-weight: bold;
-                    display: flex;
-                    flex-flow: row wrap;
-                    align-content: center;
-                    box-sizing: border-box;
-                    line-height: initial;
-                }
-
-                    .alumni.row.card.card-body p.notify span.post-date-day {
-                        display: block;
-                        width: 100%;
-                        font-size: 24px;
-                        line-height: 1.5;
-                    }
-
-                .alumni .row .card .card-body p.title {
-                    font-size: 18px;
-                    font-weight: 700;
-                    height: 48px;
-                    overflow: hidden;
-                }
-
-                .alumni .row .card .card-body p.card-text {
-                    font-size: 12px;
-                    height: 4.125rem;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-
+ /* scroll to top */
+.top {
+    place-self:end;
+    position:sticky;
+    bottom:50px;
+    margin-left:95%;
+    margin-top:100vh;
+     /* visual styling */
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    color: #fff;
+    background: rgb(210, 21, 21);
+    white-space:nowrap;
+  }
+  p {
+    font-size: 25px;
+  }
+  /* end Scroll To Top Button */               
 .footer {
     font-family: "Roboto", sans-serif;
     color: white;
@@ -676,3 +398,27 @@
         width: 100%;
     }
 
+    .foot-part {
+        background-color: #BE0F0F;
+        width: 100%;
+        margin: 0 auto;
+        padding: .5rem 2rem .5rem 2rem;
+        text-align: center;
+    }
+    
+        .foot-part a {
+            text-decoration: none;
+        }
+    
+            .foot-part a span {
+                color: white;
+                transition: opacity .3s, transform .3s;
+            }
+    
+                .foot-part a span:hover {
+                    transform: translateX(5rem);
+                }
+    
+            .foot-part a:not(:hover) img {
+                display: none;
+            }

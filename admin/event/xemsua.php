@@ -11,11 +11,11 @@ $row = mysqli_fetch_array($rs);
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Form cap nhat thong tin su kien</title>
+	<title>sửa sự kiện</title>
 </head>
 <body>
 	<form action = "handleedit.php?id=<?php echo $row['id'];?>" method = "post">
-		<table width = "100%" border="0">
+		<table width = "100%" border="0" style="">
 			<caption>FORM CAP NHAT</caption>
 			<tr>
 				<td>id : </td>
@@ -34,7 +34,7 @@ $row = mysqli_fetch_array($rs);
 			<tr>
 				<td>date </td>
 				<td><input type="text" size = "20" name="txtdate"  value="<?php echo $row['date'];?>">
-				<input type="datetime-local" size = "20" name="txtdate"  >	
+				<input type="datetime-local" size = "20" name="txtdate"  value="<?php echo $row['date'];?>" >	
 			</td>
 				
 			</tr>
@@ -48,7 +48,7 @@ $row = mysqli_fetch_array($rs);
 				<td><input type="text" size = "20" name="txtimg"  value="<?php echo $row['img'];?>">
 				<form method="POST" action="upload.php" enctype="multipart/form-data">
 						<input type="hidden" name="size" value="1000000">
-						<input type="file" name="image">
+						<input type="file" name="txtimg">
 						
 					</form>
 				</td>
