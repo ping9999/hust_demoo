@@ -1,5 +1,10 @@
+<?php
+    session_start(); //Dịch vụ bảo vệ
+    if(!isset($_SESSION['loginOK'])){
+        header("Location:../login.php");
+    }
+?>
 
-<!-- addpost -->
 <?php
 $ID   = $_POST['txtID'];
 $tieude  = $_POST['txttieude'];
@@ -17,4 +22,3 @@ header("Location:editpost.php");
 mysqli_free_result($rs);
 mysqli_close($link);
 ?>
-<!-- end add -->

@@ -1,4 +1,10 @@
 <?php
+    session_start(); //Dịch vụ bảo vệ
+    if(!isset($_SESSION['loginOK'])){
+        header("Location:../login.php");
+    }
+?>
+<?php
 $tieude = $_REQUEST['txttieude'];
 $noidung  = $_REQUEST['txtnoidung'];
 $img  = $_REQUEST['txtimg'];

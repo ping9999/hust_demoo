@@ -108,64 +108,6 @@
     border-bottom: 4px red solid;
  }
 
-.news {
-    font-family: "Roboto", sans-serif;
-}
-
-    .news .row {
-        max-width: 1260px;
-        margin: auto;
-        width: 100%;
-        padding-bottom: 2rem;
-    }
-
-        .news .row h2 {
-            font-size: 1.6rem;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-            letter-spacing: .05em;
-        }
-
-        .news .row .card {
-            border: none;
-        }
-
-            .news .row .card img {
-                height: 8.90625rem;
-                object-fit: cover;
-                border-bottom: 0.25rem solid #be0f0f;
-            }
-
-            .news .row .card .card-body {
-                padding: 0.55125rem 0 1.1025rem 0;
-            }
-
-                .news .row .card .card-body p.notify {
-                    position: absolute;
-                    top: 7rem;
-                    display: inline-block;
-                    height: 1.875rem;
-                    padding: 0 0.625rem;
-                    color: #f1f1f1;
-                    background-color: #BE0F0F;
-                    font-size: .75rem;
-                    font-weight: bold;
-                    line-height: 1.875rem;
-                }
-
-                .news .row .card .card-body p.title {
-                    font-size: 18px;
-                    font-weight: 700;
-                    height: 48px;
-                    overflow: hidden;
-                }
-
-                .news .row .card .card-body p.card-text {
-                    font-size: 14px;
-                    height: 4.125rem;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
 
 .about-us {
     font-family: "Roboto", sans-serif;
@@ -212,72 +154,6 @@
         background: url(images/bgevent.png)no-repeat;
         background-size: cover   
     }
-    .events .row {
-        max-width: 1260px;
-        margin: auto;
-        width: 100%;
-        padding-bottom: 2rem;
-    }
-
-        .events .row h2 {
-            color: #f1f1f1;
-            font-size: 1.6em;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .events .row .card {
-            border: none;
-        }
-
-            .events .row .card img {
-                height: 8.90625rem;
-                object-fit: cover;
-            }
-
-            .events .row .card .card-body {
-                padding: 15px;
-            }
-
-                .events .row .card .card-body p.notify {
-                    color: #f1f1f1;
-                    background-color: #2f2424;
-                    height: 70px;
-                    width: 70px;
-                    text-align: center;
-                    box-shadow: 0 0 10px rgba(0, 0, 0, .15), 0 3px 3px rgba(0, 0, 0, .15);
-                    margin-top: -60px;
-                    position: relative;
-                    margin-left: 25px;
-                    font-weight: bold;
-                    display: flex;
-                    flex-flow: row wrap;
-                    align-content: center;
-                    box-sizing: border-box;
-                    line-height: initial;
-                }
-
-                    .events.row.card.card-body p.notify span.post-date-day {
-                        display: block;
-                        width: 100%;
-                        font-size: 24px;
-                        line-height: 1.5;
-                    }
-
-                .events .row .card .card-body p.title {
-                    font-size: 18px;
-                    font-weight: 700;
-                    height: 48px;
-                    overflow: hidden;
-                }
-
-                .events .row .card .card-body p.card-text {
-                    font-size: 12px;
-                    height: 4.125rem;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-
 
 .video {
     font-family: "Roboto", sans-serif;

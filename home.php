@@ -422,10 +422,10 @@
     <!-- Video end-->
     
     <!-- footer  -->
-    <div class="footer   bg-secondary ">
-        <div class="bg-loader ">
+    <div class="footer    ">
+        <div class=" bg-secondary">
             <div class="overlay" >
-                <div class="row bg-secondary " >
+                <div class="row  " >
                     <div class="container-fluid bottom_border">
                         <div class="row ">
                             <div class=" col-sm-4 col-md col-sm-4 col-12 col ms-3">

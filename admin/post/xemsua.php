@@ -1,4 +1,10 @@
 <?php
+    session_start(); //Dịch vụ bảo vệ
+    if(!isset($_SESSION['loginOK'])){
+        header("Location:../login.php");
+    }
+?>
+<?php
 $myID = $_REQUEST['id'];
 $bienketnoi = mysqli_connect('localhost','root','') or die ("Could not connect: ".mysqli_error());
 //Chon CSDL de lam viec
@@ -22,7 +28,7 @@ $row = mysqli_fetch_array($rs);
 				<td>
 					<?php 
 						echo "$myID" ; 
-						session_start();
+					
 						$_REQUEST['id']=$myID;
 					?>
 				</td>
@@ -38,7 +44,7 @@ $row = mysqli_fetch_array($rs);
 			</tr>
 			<tr>
 				<td>img </td>
-				<td><input type="text" size = "20" name="txtimg"  value="<?php echo $row['img'];?>">
+				<td><?php echo $row['img'];?>
 				<form method="POST" action="upload.php" enctype="multipart/form-data">
 						<input type="hidden" name="size" value="1000000">
 						<input type="file" name="image">
@@ -46,10 +52,11 @@ $row = mysqli_fetch_array($rs);
 					</form>
 				</td>
 			</tr>
-			<tr align = "center">
+			<tr>
 				<td colspan = "2"> 
-					<input type = "Submit" value = "Cập nhật">
-					<input type = "Reset"  value = "Reset">
+				<input style="margin-top: 2%; margin-left:36%; width: 200px; height: 30px" type = "Submit" value = "luu lai">
+				<a href="editpost.php">	<input style="margin-top: 2%;   width: 200px; height: 30px" type = "button" value = "quay lai"></a>
+				
 				</td>
 			</tr>
 		</table>

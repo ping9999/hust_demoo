@@ -1,3 +1,9 @@
+<?php
+    session_start(); //Dịch vụ bảo vệ
+    if(!isset($_SESSION['loginOK'])){
+        header("Location:../login.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,7 +57,7 @@
 				<td colspan="3">
 					<input type="Submit" value="Thêm" onclick="kiemTra()">
 				
-					<a href="admin.html"><input type="Button" value="Cacel"></a>
+					<a href="editpost.php"><input type="Button" value="Cacel"></a>
 				</td>
 			</tr>
 		</table>

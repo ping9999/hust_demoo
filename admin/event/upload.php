@@ -1,4 +1,10 @@
 <?php
+    session_start(); //Dịch vụ bảo vệ
+    if(!isset($_SESSION['loginOK'])){
+        header("Location:../login.php");
+    }
+?>
+<?php
   
   $image = addslashes(file_get_contents($_FILES['image'])); //SQL Injection defence!
   

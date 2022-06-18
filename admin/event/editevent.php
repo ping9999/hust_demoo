@@ -1,3 +1,9 @@
+<?php
+    session_start(); //Dịch vụ bảo vệ
+    if(!isset($_SESSION['loginOK'])){
+        header("Location:../login.php");
+    }
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -11,7 +17,7 @@
     <title>controller events</title>
   </head>
 <?php
-session_start();
+
 //Ket noi CSDL
 $link = mysqli_connect("localhost","root","") or die ("Could not connect: ".mysqli_error());
 //Chon CSDL de lam viec
@@ -21,8 +27,9 @@ $rs = mysqli_query($link,$sql);
 //===================================================
 echo '<Form action = "handleedit.php">';
 echo '<table border = "1" width = "100%">';
-echo '<h3 class="text-center"> Thông tin su kiem moi </h3 class="text-center">'; 
-ECHO '<a class="nav-link bg-danger col-2 text-light m-1" href="addevent.php">them su kiem moi</a>'; 
+echo '<h3 class="text-center"> quản lý  sự kiện </h3 class="text-center">'; 
+ECHO '<a class="nav-link bg-danger col-2 text-light m-1" href="addevent.php">them su kiem moi</a>';
+
 echo '<tr class=" border-bottom text-center">
         <th class=" border-end">id</th>
         <th class=" border-end">tieu de</th>
@@ -43,7 +50,7 @@ while ($row = mysqli_fetch_array($rs))
       </tr>';
 }
 echo '</TABLE>';
-
+ECHO '<a class="nav-link bg-danger col-2 text-light  m-1" href="../controller.php">Quay lại trang quản lý</a>';  
 mysqli_free_result($rs);
 mysqli_close($link);
 ?>

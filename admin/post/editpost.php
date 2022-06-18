@@ -1,3 +1,9 @@
+<?php
+    session_start(); //Dịch vụ bảo vệ
+    if(!isset($_SESSION['loginOK'])){
+        header("Location:../login.php");
+    }
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -11,7 +17,7 @@
     <title> controller post</title>
   </head>
 <?php
-session_start();
+
 //Ket noi CSDL
 $link = mysqli_connect("localhost","root","") or die ("Could not connect: ".mysqli_error());
 //Chon CSDL de lam viec
@@ -42,7 +48,7 @@ while ($row = mysqli_fetch_array($rs))
       </tr>';
 }
 echo '</TABLE>';
-
+ECHO '<a class="nav-link bg-danger col-2 text-light  m-1" href="../controller.php">Quay lại trang quản lý</a>';  
 mysqli_free_result($rs);
 mysqli_close($link);
 ?>
