@@ -32,4 +32,19 @@ ALTER TABLE `post`
   ALTER TABLE `event`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
   
-  
+ CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+
+ 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+ 
+  INSERT INTO `users` (`id`, `username`, `password`) VALUES ('3', 'root', '1234');
+
+  ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id` (`id`);
+
+  ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
