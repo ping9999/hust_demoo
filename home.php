@@ -27,7 +27,7 @@
                         <p>VIỆN CÔNG NGHỆ THÔNG TIN VÀ TRUYỀN THÔNG</p>
                     </div>
                 </div>
-                <!-- ADD thêm button responsive vào đây -->
+              
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Tìm kiếm..." aria-label="Search">
                     <button class="btn" type="submit"><img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png" /></button>
@@ -189,9 +189,9 @@
             
             <?php 
             
-                        //Ket noi CSDL
+               
                         $link = mysqli_connect("localhost", "root", "") or die("Could not connect: " . mysqli_error());
-                        //Chon CSDL de lam viec
+                   
                         $db_selected = mysqli_select_db($link, "bku");
                         $sql = "select * from post";
                         $rs = mysqli_query($link, $sql);
@@ -232,9 +232,9 @@
                     </div>             
             <?php 
           
-            //Ket noi CSDL
+          
             $link = mysqli_connect("localhost", "root", "") or die("Could not connect: " . mysqli_error());
-            //Chon CSDL de lam viec
+          
             $db_selected = mysqli_select_db($link, "bku");
             $sql = "select * from event";
             $rs = mysqli_query($link, $sql);
